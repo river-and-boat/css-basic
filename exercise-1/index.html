@@ -5,11 +5,29 @@
     <title>练习-1：css selector</title>
     <style>
        /* you can test your css at here */
+       div span {
+           color: gold;
+       }
+       div p span {
+           font-size: 50px;
+       }
+       span ~ p {
+           background-color: #008000;
+       }
     </style>
 </head>
 <body>
-    <div class="section">
-        <h1 id="title" class="title">title</h1>
+    <div id="d1">
+        <p>
+            我是p标签Span前
+        </p>
+        <span>我是div标签中的span</span>
+        <p>
+            我是p标签(Span后)
+        </p>
+        <p>
+           我也是p标签(span后)
+        </p>
     </div>
 </body>
 </html>
