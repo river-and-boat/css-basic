@@ -14,6 +14,9 @@ body {
 
 h1 {
     color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
     font-size: 2em;
     width: 100%;
 }
@@ -21,7 +24,9 @@ h1 {
 h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
+    text-transform: capitalize;
     font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     line-height: 24px;
     padding-bottom: 30px;
@@ -29,6 +34,8 @@ h2 {
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: AliceBlue;
     line-height: 1.3em;
     text-align: left;
@@ -38,13 +45,19 @@ p {
 .image {
     background-size: cover;
     background-position: center;
+    background-image: url("../img/background-img.jpg");
     height: 300px;
 }
 
 .caption {
     display: block;
+    background-color: white;
+    opacity: 0.75;
+    color: black;
     font-family: 'Playfair Display', serif;
+    letter-spacing: -2.35px;
     font-size: 14px;
+    font-style: italic;
     line-height: 14px;
     margin-left: 20px;
     padding: 10px;
@@ -53,3 +66,13 @@ p {
     width: 60%;
 }
 
+/*断落第一行字体加粗*/
+p::first-line {
+    font-weight: bold;
+}
+
+/*鼠标移动上去的样式*/
+.caption a:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
